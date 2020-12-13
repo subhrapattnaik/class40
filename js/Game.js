@@ -49,7 +49,7 @@ class Game {
   //  console.log(player.rank);
     if(allPlayers !== undefined){
       background(rgb(198,135,103));
-      //image(track, 0,-windowHeight*4,windowWidth, windowHeight*5);
+     // image(track, 0,-windowHeight*4,windowWidth, windowHeight*5);
       
       //var display_position = 100;
       
