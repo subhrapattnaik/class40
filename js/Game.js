@@ -29,7 +29,7 @@ class Game {
       form.display();
     }
 
-    car1 = createSprite(3*windowWidth/12,windowHeight-10);
+    car1 = createSprite(3*windowWidth/12,windowHeight-50);
     car1.addImage("car1",car1_img);
     car2 = createSprite(5*windowWidth/12,windowHeight-10);
     car2.addImage("car2",car2_img);
@@ -49,7 +49,7 @@ class Game {
   //  console.log(player.rank);
     if(allPlayers !== undefined){
       background(rgb(198,135,103));
-      image(track, 0,-windowHeight*4,windowWidth, windowHeight*5);
+      //image(track, 0,-windowHeight*4,windowWidth, windowHeight*5);
       
       //var display_position = 100;
       
