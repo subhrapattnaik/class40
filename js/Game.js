@@ -29,13 +29,13 @@ class Game {
       form.display();
     }
 
-    car1 = createSprite(3*windowWidth/4+40,windowHeight-100);
+    car1 = createSprite(3*windowWidth/4+40,windowHeight-10);
     car1.addImage("car1",car1_img);
-    car2 = createSprite(5*windowWidth/12,windowHeight-100);
+    car2 = createSprite(5*windowWidth/12,windowHeight-10);
     car2.addImage("car2",car2_img);
-    car3 = createSprite(7*windowWidth/12,windowHeight-100);
+    car3 = createSprite(7*windowWidth/12,windowHeight-10);
     car3.addImage("car3",car3_img);
-    car4 = createSprite(9*windowWidth/12,windowHeight-100);
+    car4 = createSprite(9*windowWidth/12,windowHeight-10);
     car4.addImage("car4",car4_img);
     cars = [car1, car2, car3, car4];
   }
