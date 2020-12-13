@@ -49,7 +49,7 @@ class Game {
   //  console.log(player.rank);
     if(allPlayers !== undefined){
       background(rgb(198,135,103));
-      image(track, 0,-displayHeight*4,displayWidth, displayHeight*5);
+      image(track, 0,-height*4,width, height*5);
       
       //var display_position = 100;
       
@@ -109,6 +109,6 @@ class Game {
     console.log("Game Ended for "+player.name+"!! Rank is "+player.rank);
     var message = createElement('h2');
     message.html("Congratulations "+player.name+"!! Your Rank is "+player.rank);
-    message.position(displayWidth/2-70,displayHeight/4+40);
+    message.position(width/2-70,height/4+40);
   }
 }
