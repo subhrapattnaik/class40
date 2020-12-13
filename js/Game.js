@@ -29,7 +29,7 @@ class Game {
       form.display();
     }
 
-    car1 = createSprite(3*windowHeight/4+40,200);
+    car1 = createSprite(3*windowWidth/4+40,200);
     car1.addImage("car1",car1_img);
     car2 = createSprite(5*windowWidth/12,200);
     car2.addImage("car2",car2_img);
