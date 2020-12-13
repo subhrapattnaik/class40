@@ -29,13 +29,13 @@ class Game {
       form.display();
     }
 
-    car1 = createSprite(3*width/12,height-50);
+    car1 = createSprite(3*width/12,height-100);
     car1.addImage("car1",car1_img);
-    car2 = createSprite(5*width/12,height-50);
+    car2 = createSprite(5*width/12,height-100);
     car2.addImage("car2",car2_img);
-    car3 = createSprite(7*width/12,hight-50);
+    car3 = createSprite(7*width/12,hight-100);
     car3.addImage("car3",car3_img);
-    car4 = createSprite(9*width/12,height-50);
+    car4 = createSprite(9*width/12,height-100);
     car4.addImage("car4",car4_img);
     cars = [car1, car2, car3, car4];
   }
@@ -49,7 +49,7 @@ class Game {
   //  console.log(player.rank);
     if(allPlayers !== undefined){
       background(rgb(198,135,103));
-     image(track, 0,-windowHeight*4,windowWidth, windowHeight*5);
+     image(track, 0,-height*4,width,height*5);
       
       //var display_position = 100;
       
@@ -57,7 +57,7 @@ class Game {
       var index = 0;
 
       //x and y position of the cars
-      var x = 3*windowWidth/12 ;
+      var x = 3*width/12 ;
       var y;
 
       for(var plr in allPlayers){
@@ -96,7 +96,7 @@ class Game {
       carSound.play();
     }
 
-    if(player.distance > windowHeight*4+20){
+    if(player.distance > height*4+20){
       gameState = 2;
       player.rank+=1;
       Player.updateCarsAtEnd(player.rank);
@@ -109,6 +109,6 @@ class Game {
     console.log("Game Ended for "+player.name+"!! Rank is "+player.rank);
     var message = createElement('h2');
     message.html("Congratulations "+player.name+"!! Your Rank is "+player.rank);
-    message.position(windowWidth/2-70,windowHeight/4+40);
+    message.position(width/2-70,height/4+40);
   }
 }
