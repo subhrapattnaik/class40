@@ -49,7 +49,7 @@ class Game {
   //  console.log(player.rank);
     if(allPlayers !== undefined){
       background(rgb(198,135,103));
-      image(track, 0,-height*4,width, height*5);
+      image(track, 0,-windowHeight*4,windowWidth, windowHeight*5);
       
       //var display_position = 100;
       
@@ -78,7 +78,7 @@ class Game {
           fill("red");
           ellipse(x,y,60,60);
           cars[index - 1].shapeColor = "red";
-          camera.position.x = displayWidth/2;
+          camera.position.x = width/2;
           camera.position.y = cars[index-1].y;
         }
         textAlign(CENTER);
@@ -109,6 +109,6 @@ class Game {
     console.log("Game Ended for "+player.name+"!! Rank is "+player.rank);
     var message = createElement('h2');
     message.html("Congratulations "+player.name+"!! Your Rank is "+player.rank);
-    message.position(width/2-70,height/4+40);
+    message.position(windowWidth/2-70,windowHeight/4+40);
   }
 }
