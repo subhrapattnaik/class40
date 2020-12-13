@@ -11,10 +11,11 @@ var form, player, game;
 var cars, car1, car2, car3, car4;
 
 var track, car1_img, car2_img, car3_img, car4_img;
-
+var back_img;
 var carSound;
 
 function preload(){
+  back_img = loadImage("images/racing.jpg");
   track = loadImage("images/track.jpg");
   car1_img = loadImage("images/car1.png");
   car2_img = loadImage("images/car2.png");
@@ -34,6 +35,7 @@ function setup(){
 
 
 function draw(){
+  background(back_img);
   if(playerCount === 4){
     game.update(1);
   }
