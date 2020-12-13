@@ -29,13 +29,13 @@ class Game {
       form.display();
     }
 
-    car1 = createSprite(3*windowWidth/12,windowHeight-50);
+    car1 = createSprite(3*width/12,height-50);
     car1.addImage("car1",car1_img);
-    car2 = createSprite(5*windowWidth/12,windowHeight-10);
+    car2 = createSprite(5*width/12,height-50);
     car2.addImage("car2",car2_img);
-    car3 = createSprite(7*windowWidth/12,windowHeight-10);
+    car3 = createSprite(7*width/12,hight-50);
     car3.addImage("car3",car3_img);
-    car4 = createSprite(9*windowWidth/12,windowHeight-10);
+    car4 = createSprite(9*width/12,height-50);
     car4.addImage("car4",car4_img);
     cars = [car1, car2, car3, car4];
   }
@@ -49,7 +49,7 @@ class Game {
   //  console.log(player.rank);
     if(allPlayers !== undefined){
       background(rgb(198,135,103));
-     // image(track, 0,-windowHeight*4,windowWidth, windowHeight*5);
+     image(track, 0,-windowHeight*4,windowWidth, windowHeight*5);
       
       //var display_position = 100;
       
@@ -65,9 +65,9 @@ class Game {
         index = index + 1 ;
 
         //position the cars a little away from each other in x direction
-        x = x + 2*windowWidth/12;
+        x = x + 2*width/12;
         //use data form the database to display the cars in y direction
-        y = windowHeight - allPlayers[plr].distance;
+        y = height - allPlayers[plr].distance;
         cars[index-1].x = x;
         cars[index-1].y = y;
        // console.log(index, player.index)
@@ -96,7 +96,7 @@ class Game {
       carSound.play();
     }
 
-    if(player.distance > windowHeight/4+20){
+    if(player.distance > windowHeight*4+20){
       gameState = 2;
       player.rank+=1;
       Player.updateCarsAtEnd(player.rank);
