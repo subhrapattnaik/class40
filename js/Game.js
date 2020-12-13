@@ -67,7 +67,7 @@ class Game {
         //position the cars a little away from each other in x direction
         x = x + 200;
         //use data form the database to display the cars in y direction
-        y = displayHeight - allPlayers[plr].distance;
+        y = windowHeight - allPlayers[plr].distance;
         cars[index-1].x = x;
         cars[index-1].y = y;
        // console.log(index, player.index)
